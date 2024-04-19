@@ -2,11 +2,10 @@ package main
 
 import "fmt"
 
-func main() {
-	// page15_1()
-	page15_2()
-}
-
+// func main() {
+// page15_1()
+// page15_2()
+// }
 
 //  ❤️介面(interface)❤️
 // 不需要明確地定義實作介面，而是採用隱性實作，只要符合方法簽章即可
@@ -55,6 +54,8 @@ if ok {
 // 型別分支(type switch)
 
 // 定義一個函式，接收任何型別，並且格式化輸出值
+// interface{}(空介面) 是一種特殊的介面，它不包含任何方法，因此所有類型都實現了它
+
 func printAnyType(i interface{}) {
 	switch v := i.(type) {
 	case int:
